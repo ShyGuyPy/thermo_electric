@@ -64,7 +64,7 @@ locations.vec <- c("DCDistrict of Columbia",
                    "WVTucker")
 
 generation.df <- generation.df %>%
-  mutate(concat = paste0(County,State))
+  mutate(concat = paste0(State,County))
 
 #filter in
 final.df <- generation.df %>%
